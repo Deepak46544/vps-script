@@ -15,7 +15,7 @@ This repository contains a Telegram bot designed to perform DDoS attacks. The bo
 -github codespaces ( 4 core)
 - Python 3.x
 - `telebot` library
-- Telegram Bot Token (You Can Use Botfather)
+- Telegram Bot Token (7456161616:AAGN-X4M0Mg2Kb3gFOj3cJ5Cd91fHUuCWfA)
 
 ## Getting Started
 
@@ -44,13 +44,13 @@ This repository contains a Telegram bot designed to perform DDoS attacks. The bo
 2. Replace the placeholder token in the script with your actual bot token:
 
    ```python
-   bot = telebot.TeleBot('YOUR_BOT_TOKEN')
+   bot = telebot.TeleBot('7456161616:AAGN-X4M0Mg2Kb3gFOj3cJ5Cd91fHUuCWfA')
    ```
 
-3. Add your admin user IDs in the `admin_id` list:
+3. Add your admin user IDs in the `5674869424` list:
 
    ```python
-   admin_id = ["YOUR_ADMIN_ID"]
+   admin_id = ["5674869424"]
    ```
 
 ### Usage
@@ -111,7 +111,7 @@ This bot is intended for educational purposes only. The misuse of this bot may r
 
 ---
 
-**Note**: Replace `YOUR_BOT_TOKEN` and `YOUR_ADMIN_ID` with your actual bot token and admin user ID before running the bot. Ensure that you comply with all legal regulations and use this bot responsibly.
+**Note**: Replace `7456161616:AAGN-X4M0Mg2Kb3gFOj3cJ5Cd91fHUuCWfA` and `5674869424` with your actual bot token and admin user ID before running the bot. Ensure that you comply with all legal regulations and use this bot responsibly.
 
 ## Contributing
 
